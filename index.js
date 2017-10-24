@@ -1,5 +1,17 @@
 $(document).ready(function() { 
 
+//animation to the header
+$('.date').hide();
+$('#navbr').hide();
+
+//moving from main page to page with header and stuff
+$('.header').click(function(e) { 
+    $('.header').hide().show('slow');
+    $('.date').show('slow');
+    $('#navbr').show('slow');
+    $('#butt').hide();
+});
+
 
 //hover for buttons
 $('a').hover(function() {
@@ -16,33 +28,14 @@ $('button').hover(function() {
 
 
 
-
-//animation to the header
-$('.date').hide();
-$('#navbr').hide();
-
-//moving from main page to page with header and stuff
-$('.header').click(function(e) { 
-    $('.header').hide().show('slow');
-    $('.date').show('slow');
-    $('#navbr').show('slow');
-    $('#butt').hide();
-});
-
-
 //overlay for info button
 var $overlay = $('<div id="overlay"></div>'); //jQuery object
 
 //var $image = $('<img>');
-var $caption = $('<p>Are you Afro-caribbean and wondered why there are not more people like you in tech? Are you under 25 and want to get a feel for the industry but do not know how? We gotchu you! YAC are hosting a FREE 3 day event for you to get a taste of all things #enterprise, tech and #design. In November we will be running our first ever YACATHON. Expert or novice we have something for you.</p>'
-	              '<p>In partnership with:  <p>');
+var $caption = $('<p>Are you Afro-caribbean and wondered why there are not more people like you in tech? Are you under 25 and want to get a feel for the industry but do not know how? We gotchu you! YAC are hosting a FREE 3 day event for you to get a taste of all things #enterprise, tech and #design. In November we will be running our first ever YACATHON. Expert or novice we have something for you.</p>');
 
-$caption.css('text-align','centre');
-$caption.css('position','centre-align');
 // a caption to overlay
 $overlay.append($caption);
-
-
 
 $('.learnMore').click (function(e) {
 //To add an overlay
