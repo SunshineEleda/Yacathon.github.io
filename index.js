@@ -32,7 +32,7 @@ $('button').hover(function() {
 var $overlay = $('<div id="overlay"></div>'); //jQuery object
 
 //var $image = $('<img>');
-var $caption = $('<p>Are you Afro-caribbean and wondered why there are not more people like you in tech? Are you under 25 and want to get a feel for the industry but do not know how? We gotchu you! YAC are hosting a FREE 3 day event for you to get a taste of all things #enterprise, tech and #design. In November we will be running our first ever YACATHON. Expert or novice we have something for you.</p>');
+var $caption = $('<p>Are you from an African/Caribbean background and wondered why there are not more people like you in tech? Are you under 25 and want to get a feel for the industry but do not know how? We gotchu you! YAC are hosting a FREE 3 day event for you to get a taste of all things #enterprise, tech and #design. In November we will be running our first ever YACATHON. Expert or novice we have something for you.</p>');
 
 // a caption to overlay
 $overlay.append($caption);
